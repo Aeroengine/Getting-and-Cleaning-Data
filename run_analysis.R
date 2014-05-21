@@ -60,10 +60,11 @@ names(sensor_data_mean_std) <- gsub('Acc',"Acceleration",names(sensor_data_mean_
 names(sensor_data_mean_std) <- gsub('GyroJerk',"AngularAcceleration",names(sensor_data_mean_std))
 names(sensor_data_mean_std) <- gsub('Gyro',"AngularSpeed",names(sensor_data_mean_std))
 names(sensor_data_mean_std) <- gsub('Mag',"Magnitude",names(sensor_data_mean_std))
-names(sensor_data_mean_std) <- gsub('^t',"TimeDomain",names(sensor_data_mean_std))
-names(sensor_data_mean_std) <- gsub('^f',"FrequencyDomain",names(sensor_data_mean_std))
+names(sensor_data_mean_std) <- gsub('^t',"TimeDomain.",names(sensor_data_mean_std))
+names(sensor_data_mean_std) <- gsub('^f',"FrequencyDomain.",names(sensor_data_mean_std))
 names(sensor_data_mean_std) <- gsub('\\.mean',".Mean",names(sensor_data_mean_std))
 names(sensor_data_mean_std) <- gsub('\\.std',".StandardDeviation",names(sensor_data_mean_std))
+names(sensor_data_mean_std) <- gsub('Freq\\.',"Frequency.",names(sensor_data_mean_std))
 names(sensor_data_mean_std) <- gsub('Freq$',"Frequency",names(sensor_data_mean_std))
 
 ######################################################################################################################
